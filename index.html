@@ -69,6 +69,7 @@
 	a {
 	    text-decoration: none;
 	    color: #0073e6;
+	    target: "blank";
 	}
 	    
 	h2 {
@@ -141,7 +142,7 @@
     <p>In summary, the main contributions of this work are:</p>
     <ul>
         <li>A publicly available dataset named Cars-SRPlates containing 100,000 images, divided into 10,000 video tracks of cars, where each track contains five LR and five HR images of the same car license plate. 5,000 tracks were collected at a resolution of 1280×920, while the remaining 5,000 tracks were captured at 1920×1080. The dataset is balanced between Mercosur and Brazilian LPs layouts, across both resolutions.</li>
-        <li>Experiments conducted on the Cars-SRPlates dataset utilized the super-resolution models Pixel-Level Network (PLNET) <a href="https://raysonlaroca.github.io/papers/nascimento2023super.pdf">[Nascimento et al., 2023]</a> and Pixel-Level Network (LCDNet) <a href="https://raysonlaroca.github.io/papers/nascimento2024enhancing.pdf">[Nascimento et al., 2024]</a>. For each track, five super-resolved images were generated from the low-resolution (LR) sequences. Inspired by [Laroca et al., 2023b], we explored the temporal characteristics of LR images by feeding the super-resolved images into the Global Perception License Plate Recognition (GP_LPR) model, employing three fusion strategies: sequence-level majority vote, character-level majority vote, and highest-confidence prediction. Notably, utilizing five super-resolved images with character-level majority voting resulted in an improvement in recognition accuracy.</li>
+        <li>Experiments conducted on the Cars-SRPlates dataset utilized the super-resolution models Pixel-Level Network (PLNET) <a href="https://raysonlaroca.github.io/papers/nascimento2023super.pdf">[Nascimento et al., 2023]</a> and Pixel-Level Network (LCDNet) <a href="https://raysonlaroca.github.io/papers/nascimento2024enhancing.pdf">[Nascimento et al., 2024]</a>. For each track, five super-resolved images were generated from the low-resolution (LR) sequences. Inspired by <a href="https://raysonlaroca.github.io/supp/lpr-model-fusion/">[Laroca et al., 2023b]</a>, we explored the temporal characteristics of LR images by feeding the super-resolved images into the Global Perception License Plate Recognition (GP_LPR) model, employing three fusion strategies: sequence-level majority vote, character-level majority vote, and highest-confidence prediction. Notably, utilizing five super-resolved images with character-level majority voting resulted in an improvement in recognition accuracy.</li>
     </ul>
     <table class="table">
     <tr>
