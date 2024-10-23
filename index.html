@@ -65,14 +65,19 @@
 	sup {
             font-size: 10px;
         }
-	
-h2 {
-    border-top: 1px solid #000;
-    text-align: center; /* Align text to the center */
-    max-width: 790px; /* Match the width of the abstract */
-    margin: 20px auto; /* Center the heading */
-    padding-top: 10px; /* Optional: add some padding above the text */
-}
+
+	a {
+	    text-decoration: none;
+	    color: #0073e6;
+	}
+	    
+	h2 {
+    	    border-top: 1px solid #000;
+    	    text-align: center; /* Align text to the center */
+    	    max-width: 790px; /* Match the width of the abstract */
+     	    margin: 20px auto; /* Center the heading */
+    	    padding-top: 10px; /* Optional: add some padding above the text */
+	}
 	
         .abstract, .paper {
             margin: 20px auto; /* Center and space out the section */
@@ -136,7 +141,7 @@ h2 {
     <p>In summary, the main contributions of this work are:</p>
     <ul>
         <li>A publicly available dataset named Cars-SRPlates containing 100,000 images, divided into 10,000 video tracks of cars, where each track contains five LR and five HR images of the same car license plate. 5,000 tracks were collected at a resolution of 1280×920, while the remaining 5,000 tracks were captured at 1920×1080. The dataset is balanced between Mercosur and Brazilian LPs layouts, across both resolutions.</li>
-        <li>Experiments conducted on the Cars-SRPlates dataset utilized the super-resolution models Pixel-Level Network (PLNET) [Nascimento et al., 2023] and Pixel-Level Network (LCDNet) [Nascimento et al., 2024]. For each track, five super-resolved images were generated from the low-resolution (LR) sequences. Inspired by [Laroca et al., 2023b], we explored the temporal characteristics of LR images by feeding the super-resolved images into the Global Perception License Plate Recognition (GP_LPR) model, employing three fusion strategies: sequence-level majority vote, character-level majority vote, and highest-confidence prediction. Notably, utilizing five super-resolved images with character-level majority voting resulted in an improvement in recognition accuracy.</li>
+        <li>Experiments conducted on the Cars-SRPlates dataset utilized the super-resolution models Pixel-Level Network (PLNET) <a href="https://raysonlaroca.github.io/papers/nascimento2023super.pdf">[Nascimento et al., 2023]</a> and Pixel-Level Network (LCDNet) <a href="https://raysonlaroca.github.io/papers/nascimento2024enhancing.pdf">[Nascimento et al., 2024]</a>. For each track, five super-resolved images were generated from the low-resolution (LR) sequences. Inspired by [Laroca et al., 2023b], we explored the temporal characteristics of LR images by feeding the super-resolved images into the Global Perception License Plate Recognition (GP_LPR) model, employing three fusion strategies: sequence-level majority vote, character-level majority vote, and highest-confidence prediction. Notably, utilizing five super-resolved images with character-level majority voting resulted in an improvement in recognition accuracy.</li>
     </ul>
     <table class="table">
     <tr>
@@ -149,7 +154,7 @@ h2 {
 
 <h2><center>How to Access the Dataset</center></h2>
 <div class="paper">
-    <p>The Cars-SRPlates dataset is available for academic research purposes and is free to researchers affiliated with educational or research institutions for non-commercial use. To request access, carefully review and complete the license agreement, then send it to the first author at <a href="mailto:vwnascimento@inf.ufpr.br" style="text-decoration: none; color: #0073e6;" target="_blank">vwnascimento@inf.ufpr.br</a>. Please ensure the email is sent from a valid university domain (e.g., .edu, .ac, or similar). A download link will typically be provided within 1-5 business days. Incomplete requests or failure to follow the instructions may result in no response.</p>
+    <p>The Cars-SRPlates dataset is available for academic research purposes and is free to researchers affiliated with educational or research institutions for non-commercial use. To request access, carefully review and complete the license agreement, then send it to the first author at <a href="mailto:vwnascimento@inf.ufpr.br" target="_blank">vwnascimento@inf.ufpr.br</a>. Please ensure the email is sent from a valid university domain (e.g., .edu, .ac, or similar). A download link will typically be provided within 1-5 business days. Incomplete requests or failure to follow the instructions may result in no response.</p>
 </table>
 </div>
 
