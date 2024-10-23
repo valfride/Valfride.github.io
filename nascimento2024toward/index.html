@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valfride W. Nascimento - Profile</title>
+    <style>
+        .table {
+            justify-content: center;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .table td {
+            text-align: center;
+            font-size: 19px; /* Fixed font size */
+            padding: 5px 10px; /* Reduced padding for closer alignment */
+        }
+
+        .title {
+            font-family: Arial, sans-serif;
+            font-size: 38px;
+            text-align: center;
+            margin: auto;
+            max-width: 800px; /* Reduced max width */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff; /* Set background color to white */
+        }
+
+        /* Centered container for image and caption */
+        figure {
+            margin: 20px auto; /* Center the figure */
+            text-align: center; /* Center text in the figure */
+            max-width: 800px; /* Ensure the figure doesn't exceed this width */
+        }
+
+        img {
+            max-width: 100%; /* Image takes full width of the figure */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Treat image as block */
+            margin: 0 auto; /* Center the image */
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 14px; /* Caption font size */
+            color: #555; /* Caption color */
+            text-align: justify; /* Justify text */
+        }
+
+        hr {
+            border: 0; /* Remove default border */
+            height: 1px; /* Height of the line */
+            background: #000000; /* Color of the line */
+            margin: 20px auto; /* Center the line */
+            max-width: 80% /* Adjust width of the line */
+        }
+	    
+	sup {
+            font-size: 10px;
+        }
+
+	a {
+	    text-decoration: none;
+	    color: #0073e6;
+	}
+	    
+	h2 {
+    	    border-top: 1px solid #000;
+    	    text-align: center; /* Align text to the center */
+    	    max-width: 790px; /* Match the width of the abstract */
+     	    margin: 20px auto; /* Center the heading */
+    	    padding-top: 10px; /* Optional: add some padding above the text */
+	}
+	
+        .abstract, .paper {
+            margin: 20px auto; /* Center and space out the section */
+            padding: 15px; /* Padding around the section */
+            border: 1px solid #ccc; /* Optional border around the section */
+            border-radius: 5px; /* Rounded corners */
+            max-width: 800px; /* Set a narrower max width for the section */
+            background-color: #f9f9f9; /* Light background color */
+            text-align: justify; /* Align text to the left */
+        }
+    </style>
+</head>
+
+<body>
+<center>
+<span class="title">Toward Advancing License Plate Super-Resolution <br> in Real-World Scenarios: A Dataset and Benchmark</span>
+</center>
+<table class="table">
+    <tr>
+        <td><span><a href="https://www.inf.ufpr.br/vwnascimento/" target="_blank">Valfride Nascimento</a><sup>1</sup></span></td>
+        <td><span><a href="https://www.ppgia.pucpr.br/~rayson/" target="_blank">Rayson Laroca</a><sup>1,2</sup></span></td>
+        <td><span><a href="https://www.inf.ufpr.br/gelima/" target="_blank">Gabriel Lima</a><sup>1</sup></span></td>
+        <td><span><a href="https://web.inf.ufpr.br/menotti/" target="_blank">David Menotti</a><sup>1</sup></span></td>
+    </tr>
+</table>
+
+<!-- Single line for the Federal University -->
+<table class="table">
+    <tr>
+        <td colspan="4"><span style="display: inline-block; width: 100%;"><sup>1</sup>Federal University of Paraná</span></td>
+    </tr>
+    <tr>
+        <td colspan="4"><span style="display: inline-block; width: 100%;"><sup>2</sup>Pontifical Catholic University of Paraná</span></td>
+    </tr>
+</table>
+
+<!-- Figure Section -->
+<figure>
+    <img src="carssrplates1.png" alt="Description of the image">
+    <figcaption>Examples of tracks in the Cars-SRPlates dataset. Each track consists of five sequential LR images and five sequential HR images of the same license plate, captured under varying real-world conditions. Each row represents a track, with the left side showcasing the LR images, while the right side presents samples of the HR images.
+    </figcaption>
+</figure>
+
+
+
+<!-- Abstract Section -->
+<h2>Abstract</h2>
+<div class="abstract">
+    <p>While significant advancements have been made in super-resolution for License Plate Recognition (LPR) to address the challenges posed by low-resolution (LR) and degraded images in surveillance, traffic monitoring, and forensic applications, many recent studies still rely on private datasets or simplified degradation models, where LR images are often generated by downsampling high-resolution (HR) images. To address this issue, we introduce Cars-SRPlates, a novel dataset comprising 100,000 paired low- and high-resolution license plate images captured under real-world conditions. This dataset overcomes the limitations of existing resources that depend on synthetically degraded images, providing a more realistic benchmark for developing and evaluating super-resolution (SR) methods within the context of LPR. Our evaluation involves two SR models, Pixel-Level Network (PLNET) and Pixel-Level Network (LCDNet), alongside three fusion strategies - Highest Confidence (HC), Majority Vote (MV), and Majority Vote by Character position (MVCP) - to assess their impact on Global Perception License Plate Recognition (GP_LPR) performance. Results demonstrate that SR significantly improves recognition accuracy, especially when multiple super-resolved images are combined using majority-vote-based fusion techniques. Specifically, LCDNet paired with the MVCP strategy achieves the highest recognition rate, boosting accuracy from 38.2% to 44.2% using sequences of five images. These findings underscore the critical role of SR in enhancing LPR accuracy under adverse conditions.</p>
+</div>
+
+
+
+<!-- Paper Section -->
+<h2><center>Paper</center></h2>
+<div class="paper">
+    <p><strong>Authors:</strong> Valfride Nascimento, Rayson Laroca, Gabriel Lima, David Menotti</p>
+    <p><strong>Title:</strong> Toward Advancing License Plate Super-Resolution in Real-World Scenarios: A Dataset and Benchmark</p>
+    <!--<p><strong>Conference:</strong> Iberoamerican Congress on Pattern Recognition (CIARP), pp. 60-75, Nov 2023.</p>-->
+    <p><strong>Summary:</strong></p>
+    <p>In summary, the main contributions of this work are:</p>
+    <ul>
+        <li>A publicly available dataset named Cars-SRPlates containing 100,000 images, divided into 10,000 video tracks of cars, where each track contains five LR and five HR images of the same car license plate. 5,000 tracks were collected at a resolution of 1280×920, while the remaining 5,000 tracks were captured at 1920×1080. The dataset is balanced between Mercosur and Brazilian LPs layouts, across both resolutions.</li>
+        <li>Experiments conducted on the Cars-SRPlates dataset utilized the super-resolution models Pixel-Level Network (PLNET) <a href="https://raysonlaroca.github.io/papers/nascimento2023super.pdf" target="_blank">[Nascimento et al., 2023]</a> and Pixel-Level Network (LCDNet) <a href="https://raysonlaroca.github.io/papers/nascimento2024enhancing.pdf" target="_blank">[Nascimento et al., 2024]</a>. For each track, five super-resolved images were generated from the low-resolution (LR) sequences. Inspired by <a href="https://raysonlaroca.github.io/supp/lpr-model-fusion/" target="_blank">[Laroca et al., 2023b]</a>, we explored the temporal characteristics of LR images by feeding the super-resolved images into the <a href="https://github.com/MMM2024/GP_LPR" target="_blank">Global Perception License Plate Recognition (GP_LPR)</a> model, employing three fusion strategies: sequence-level majority vote, character-level majority vote, and highest-confidence prediction. Notably, utilizing five super-resolved images with character-level majority voting resulted in an improvement in recognition accuracy.</li>
+    </ul>
+    <table class="table">
+    <tr>
+        <td><span><a href="" target="_blank">[arXiv]</a></span></td>
+        <td><span><a href="" target="_blank">[BibTeX]</a></span></td>
+        <td><span><a href="" target="_blank">[train/val/test splits]</a></span></td>
+    </tr>
+</table>
+</div>
+
+<h2><center>How to Access the Dataset</center></h2>
+<div class="paper">
+    <p>The Cars-SRPlates dataset is available for academic research purposes and is free to researchers affiliated with educational or research institutions for non-commercial use. To request access, carefully review and complete the license agreement, then send it to the first author at <a href="mailto:vwnascimento@inf.ufpr.br" target="_blank">vwnascimento@inf.ufpr.br</a>. Please ensure the email is sent from a valid university domain (e.g., .edu, .ac, or similar). A download link will typically be provided within 1-5 business days. Incomplete requests or failure to follow the instructions may result in no response.</p>
+</table>
+</div>
+
+<h2>Acknowledgements</h2>
+<div class="paper">
+    <p>This study was financed in part by the Coordenação de Aper-
+feiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Finance Code 001, and in part by the Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)(# 315409/2023-1 and # 312565/2023-2). We gratefully acknowledge the support of NVIDIA Corporation with the donation of the Quadro RTX 8000 GPU used for this research.</p>
+</div>
+
+	
+
+
+</body>
+</html>
