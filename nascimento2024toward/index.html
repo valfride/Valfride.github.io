@@ -117,7 +117,7 @@
 <!-- Figure Section -->
 <figure>
     <img src="carssrplates1.png" alt="Description of the image">
-    <figcaption>Examples of tracks in the Cars-SRPlates dataset. Each track consists of five sequential LR images and five sequential HR images of the same license plate, captured under varying real-world conditions. Each row represents a track, with the left side showcasing the LR images, while the right side presents samples of the HR images.
+    <figcaption>Examples of tracks in the UFPR-SR-Plates dataset. Each track consists of five sequential LR images and five sequential HR images of the same license plate, captured under varying real-world conditions. Each row represents a track, with the left side showcasing the LR images, while the right side presents samples of the HR images.
     </figcaption>
 </figure>
 
@@ -141,7 +141,7 @@
     <p>In summary, the main contributions of this work are:</p>
     <ul>
 	<li>A publicly available dataset containing 100,000 images, divided into 10,000 tracks, with each track containing five LR images and five HR images of the same LP. To enhance variability, 5,000 tracks were collected at a resolution of 1280x920 pixels, while the remaining 5,000 tracks were captured at 1920x1080 pixels. The dataset is evenly distributed between Mercosur and Brazilian LPs, making it the largest dataset in terms of the number of LPs for both layouts</li>
-        <li>We conducted benchmark experiments on the proposed dataset using two state-of-the-art models for super-resolving LPs, namely the PLNET and LCDNet networks proposed in Nascimento et al., 2024<a href="https://raysonlaroca.github.io/papers/nascimento2023super.pdf" target="_blank">a</a> [<a href="https://raysonlaroca.github.io/papers/nascimento2024enhancing.pdf" target="_blank">b]</a>For each track, we generated five super-resolved images from the LR images and compared the recognition results obtained by the leading Optical Character Recognition (OCR) model, GP_LPR<a href="https://github.com/MMM2024/GP_LPR" target="_blank">[Liu et al., 2024b]</a> The super-resolution process significantly boosted recognition accuracy, increasing from 1.7% to 31.1%. To further enhance LPR performance, we explored three fusion strategies for combining the outputs from the OCR model based on multiple super-resolved images. Notably, applying the Majority Vote by Character Position (MVCP) strategy with five super-resolved images improved the recognition rate from 31.1% to 44.7%. The proposed dataset enables the exploration of temporal relationships among low-resolution LPs, as it includes multiple sequential LR images for each LP. </li>
+        <li>We conducted benchmark experiments on the proposed dataset using two state-of-the-art models for super-resolving LPs, namely the PLNET and LCDNet networks proposed in [Nascimento et al., 2024<a href="https://raysonlaroca.github.io/papers/nascimento2023super.pdf" target="_blank">a</a> [<a href="https://raysonlaroca.github.io/papers/nascimento2024enhancing.pdf" target="_blank">b</a>]. For each track, we generated five super-resolved images from the LR images and compared the recognition results obtained by the leading Optical Character Recognition (OCR) model, GP_LPR <a href="https://github.com/MMM2024/GP_LPR" target="_blank">[Liu et al., 2024b]</a> The super-resolution process significantly boosted recognition accuracy, increasing from 1.7% to 31.1%. To further enhance LPR performance, we explored three fusion strategies for combining the outputs from the OCR model based on multiple super-resolved images. Notably, applying the Majority Vote by Character Position (MVCP) strategy with five super-resolved images improved the recognition rate from 31.1% to 44.7%. The proposed dataset enables the exploration of temporal relationships among low-resolution LPs, as it includes multiple sequential LR images for each LP. </li>
     </ul>
     <table class="table">
     <tr>
@@ -154,7 +154,7 @@
 
 <h2><center>How to Access the Dataset</center></h2>
 <div class="paper">
-    <p>The Cars-SRPlates dataset is available for academic research purposes and is free to researchers affiliated with educational or research institutions for non-commercial use. To request access, carefully review and complete the license agreement, then send it to the first author at <a href="mailto:vwnascimento@inf.ufpr.br" target="_blank">vwnascimento@inf.ufpr.br</a>. Please ensure the email is sent from a valid university domain (e.g., .edu, .ac, or similar). A download link will typically be provided within 1-5 business days. Incomplete requests or failure to follow the instructions may result in no response.</p>
+    <p>The UFPR-SR-Plates dataset is available for academic research purposes and is free to researchers affiliated with educational or research institutions for non-commercial use. To request access, carefully review and complete the license agreement, then send it to the first author at <a href="mailto:vwnascimento@inf.ufpr.br" target="_blank">vwnascimento@inf.ufpr.br</a>. Please ensure the email is sent from a valid university domain (e.g., .edu, .ac, or similar). A download link will typically be provided within 1-5 business days. Incomplete requests or failure to follow the instructions may result in no response.</p>
 </table>
 </div>
 
