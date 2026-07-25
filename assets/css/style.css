@@ -62,8 +62,8 @@ button { font: inherit; }
 .hero { padding: clamp(88px, 11vw, 148px) 0 clamp(96px, 12vw, 168px); border-bottom: 1px solid var(--line); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.55fr); align-items: end; gap: clamp(56px, 9vw, 128px); }
 .section-label { margin: 0 0 24px; color: var(--subtle); font-size: 0.74rem; font-weight: 650; letter-spacing: 0.13em; text-transform: uppercase; }
-.hero h1 { max-width: 830px; margin: 0; font-size: clamp(3.1rem, 6vw, 5.6rem); font-weight: 650; letter-spacing: -0.06em; line-height: 0.98; }
-.hero-lead { max-width: 760px; margin: 34px 0 0; color: var(--muted); font-size: clamp(1.05rem, 1.7vw, 1.28rem); line-height: 1.72; }
+.hero h1 { max-width: 830px; margin: 0; font-size: clamp(2.45rem, 4.6vw, 4rem); font-weight: 640; letter-spacing: -0.045em; line-height: 1.05; }
+.hero-lead { max-width: 760px; margin: 28px 0 0; color: var(--muted); font-size: clamp(1.05rem, 1.7vw, 1.28rem); line-height: 1.72; }
 .hero-meta { margin: 30px 0 0; color: var(--subtle); font-size: 0.84rem; }
 .hero-links { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 30px; }
 .hero-links a, .quiet-link, .publication-links a, .project a, .contact-details > a, .profile-links a { font-size: 0.88rem; font-weight: 620; }
@@ -75,6 +75,7 @@ button { font: inherit; }
 .content-section, .contact-section { padding: clamp(88px, 10vw, 136px) 0; border-bottom: 1px solid var(--line); scroll-margin-top: 76px; }
 .two-column { display: grid; grid-template-columns: minmax(250px, 0.7fr) minmax(0, 1.3fr); gap: clamp(56px, 10vw, 140px); }
 .section-intro { align-self: start; }
+.section-intro .section-label { margin-bottom: 0; }
 h2 { max-width: 720px; margin: 0; font-size: clamp(2.15rem, 4.5vw, 4.25rem); font-weight: 610; letter-spacing: -0.05em; line-height: 1.04; }
 .prose { max-width: 720px; }
 .prose p { margin: 0 0 22px; color: var(--muted); font-size: 1.05rem; }
@@ -131,7 +132,7 @@ h2 { max-width: 720px; margin: 0; font-size: clamp(2.15rem, 4.5vw, 4.25rem); fon
   .nav-links { gap: 18px; padding-bottom: 14px; }
   .nav-links a { white-space: nowrap; }
   .hero { padding-top: 76px; }
-  .hero h1 { font-size: clamp(2.8rem, 14vw, 4rem); }
+  .hero h1 { font-size: clamp(2.35rem, 11vw, 3.25rem); }
   .section-heading { align-items: start; flex-direction: column; margin-bottom: 42px; }
   .publication { grid-template-columns: 1fr; gap: 18px; }
   .publication-index { flex-direction: row; align-items: baseline; gap: 12px; }
